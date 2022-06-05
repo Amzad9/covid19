@@ -4,7 +4,7 @@ const props = defineProps({
 });
 </script>
 <template>
-  <div class="card bg-info py-3">
+  <div class="card bg-info py-3 shadow border-0">
     <div class="card-body">
       <h5 class="mb-3 fst-italic">Deaths</h5>
       <h2
