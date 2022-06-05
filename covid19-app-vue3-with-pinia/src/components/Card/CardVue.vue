@@ -1,17 +1,17 @@
 <script setup>
 const props = defineProps({
-  items: {
-    type: Array,
+  class: {
+    type: String,
+  },
+  classBody: {
+    type: String,
   },
 });
 </script>
 <template>
-  <div class="card">
-    <div class="card-body">
-      <h5>State</h5>
-      <h2 class="fw-bold">
-        {{ props.item }}
-      </h2>
+  <div :class="props.cardClass">
+    <div :class="props.classBody">
+      <slot></slot>
     </div>
   </div>
 </template>
